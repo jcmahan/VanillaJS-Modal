@@ -1,0 +1,31 @@
+body {
+    padding: 2em;
+}
+button {
+    display: inline-block;
+    padding: .5em, .75em;
+    border: 0;
+    font-size: 2em; 
+    background-color: dodgerblue;
+    animation: change-color 1.5s ease-out;
+    animation-play-state: paused;
+}
+.slategrey {
+    background-color: slategrey; 
+}
+.modal-container{
+    position: fixed; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+body.modal-is-open .modal-container {
+    opacity: 1;
+    z-index: 1;
+}

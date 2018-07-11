@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Modal With Vanilla JS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    <script src="JS/main.js"></script>
 </head>
 <body>
-    <button class='button'>Click Me!</button>
-    <script src='main.js'></script>
+    <div class='container'>
+        <div>
+    <button class='jsModalToggle'>Click Me!</button>
+    <svg viewBox='8 0 58 66'>
+        <use xlink:href='images/sprite.svg#point-hand' />
+        </svg>
+    </div>
+    </div>
+    <div class='modal-container'>
+        <div class='modal'></div>
+    </div>
+    <script src='JS/main.js'></script>
 </body>
 </html>
